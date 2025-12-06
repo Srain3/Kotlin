@@ -2,9 +2,9 @@
 Minecraft SpigotサーバーでKotlin製のPluginを使うときのKotlinLib
 # Version情報
 JavaTarget: `25`  
-Kotlin: `2.3.0-Beta2`  
-Gradle: `9.2.0`  
-ShadowJar: `9.2.2`  
+Kotlin: `2.3.0-RC2`  
+Gradle: `9.2.1`  
+ShadowJar: `9.3.0`  
 Minecraft: `1.21+`
 # 使用方法
 `plugin.yml`に
