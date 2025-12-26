@@ -2,7 +2,7 @@
 Minecraft SpigotサーバーでKotlin製のPluginを使うときのKotlinLib
 # Version情報
 JavaTarget: `25`  
-Kotlin: `2.3.0-RC2`  
+Kotlin: `2.3.0`  
 Gradle: `9.2.1`  
 ShadowJar: `9.3.0`  
 Minecraft: `1.21+`
