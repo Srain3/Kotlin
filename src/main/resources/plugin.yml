@@ -6,5 +6,5 @@ authors:
 website: "https://github.com/Srain3/Kotlin"
 main: com.github.srain3.Kotlin
 load: STARTUP
-version: "2.3.0"
+version: "2.3.10"
 api-version: "1.21"
