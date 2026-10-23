@@ -1,10 +1,10 @@
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '2.3.20'
-    id 'com.gradleup.shadow' version '9.3.1'
+    id 'org.jetbrains.kotlin.jvm' version '2.4.21'
+    id 'com.gradleup.shadow' version '9.6.1'
 }
 
 group 'com.github.srain3'
-version '2.3.20'
+version '2.4.21'
 
 repositories {
     mavenCentral()
@@ -12,15 +12,24 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.jetbrains.kotlin:kotlin-stdlib:2.3.20'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:2.4.21'
     compileOnly "org.spigotmc:spigot-api:1.21-R0.1-SNAPSHOT"
 }
 
 kotlin {
     compileJava {
         options.release.set(25)
-
     }
 }
 
 apply plugin: 'com.gradleup.shadow'
+
+processResources {
+    def props = [version: version]
+    inputs.properties props
+    filteringCharset 'UTF-8'
+
+    filesMatching('plugin.yml') {
+        expand props
+    }
+}
